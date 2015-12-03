@@ -1,0 +1,20 @@
+<div id="user_list" style="text-align: center;" ng-repeat="user in userinfo |  filter:userfilterFn  |  orderBy:'name'">
+    <button type="button" class="btn btn-lg btn-primary"
+            style="width: 90%; margin-bottom: 5px;" ng-click="selectUser(this)"    >
+        <span class="glyphicon glyphicon-ok" aria-hidden="true" ng-show= "myVar" ></span>    {{user.name}}  
+    </button>
+</div>
+
+<div id="user_list" style="text-align: center;" >
+    <button type="button" class="btn btn-lg btn-info"
+            style="width:100%; margin-top: 5px;" ng-click="makeRoom()">
+        make Room
+    </button>
+ </div>
+
+
+
+
+
+
+
